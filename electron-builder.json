@@ -1,0 +1,33 @@
+{
+  "appId": "com.likweitan.allo",
+  "files": [
+    "dist-electron",
+    "dist-react",
+    "electron/main.js",
+    "package.json",
+    "dist",
+    "node_modules/playwright-core/",
+      "assets/icons/**/*",
+    {
+      "from": ".local-browsers/",
+      "to": "Resources"
+    }
+  ],
+  "icon": "assets/icons/favicon",
+  "extraResources": [
+    {
+      "from": ".local-browsers/",
+      "to": "browsers"
+    }
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}

@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+textarea {
+  width: 800px;
+}
+
+/* Accordion Styles */
+.accordion-container {
+  width: 800px;
+  margin: 20px auto;
+}
+
+.accordion-trigger {
+  /* width: 100%; */
+  /* padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 300ms; */
+  
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.accordion-trigger:hover {
+  border-color: #646cff;
+}
+
+.accordion-icon {
+  transition: transform 100ms;
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms;
+  border: 0px solid #ddd;
+  border-top: none;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+.accordion-inner {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e6c7c7;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  transition: border-color 300ms;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
